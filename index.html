@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,9 +124,16 @@
 }
 
 
-/* Add hover effect for images in the publication section */
+/* Increase the size of images in the publication section */
+.paper img {
+    width: 350px; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Adjust hover effect to the increased image size */
 .paper img:hover {
-    transform: scale(1.1); /* Increase size by 10% */
+    transform: scale(1.2); /* Increase size by 20% */
     transition: transform 0.3s ease; /* Smooth transition effect */
 }
 
