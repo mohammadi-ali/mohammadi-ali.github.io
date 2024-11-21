@@ -7,13 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Mohammadi | CV</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .header-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .header-container img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .header-container div {
+            text-align: left;
+        }
+        .header-container h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .header-container p {
+            margin: 5px 0;
+        }
+        nav ul {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile Photo" style="width: 150px; border-radius: 50%; margin-bottom: 10px;">
-        <h1>Ali Mohammadi</h1>
-        <p>Email: <a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=1-N0KaIAAAAJ" target="_blank">View Scholar Profile</a></p>
+        <div class="header-container">
+            <img src="images/profile.jpg" alt="Profile Photo">
+            <div>
+                <h1>Ali Mohammadi</h1>
+                <p>Email: <a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
+                <p>Google Scholar: <a href="https://scholar.google.com/citations?user=1-N0KaIAAAAJ" target="_blank">View Scholar Profile</a></p>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#education">Education</a></li>
