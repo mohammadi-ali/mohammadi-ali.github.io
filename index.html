@@ -60,6 +60,43 @@
             margin: 20px 0;
         }
 
+        .papers {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .paper {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .paper img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .paper-details {
+            text-align: left;
+        }
+
+        .paper-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .paper-citation {
+            font-size: 0.9em;
+            color: #555;
+        }
+
         footer {
             text-align: center;
             margin: 20px 0;
@@ -81,32 +118,38 @@
         <div class="decorative-line"></div>
     </header>
     <main>
-        <section id="education">
-            <h2>Education</h2>
-            <p>Ph.D. in Computer Science, University of Maryland, Baltimore County (UMBC)</p>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am a fourth-year Ph.D. student in Computer Science at the University of Maryland, Baltimore County (UMBC), 
+                where I am advised by Dr. Manas Gaur and Dr. Frank Ferraro. My research focuses on Natural Language Processing (NLP) and 
+                Machine Learning, with a specialization in the explainability and robustness of language models and large language models. 
+                I am passionate about advancing the understanding and application of NLP to create more interpretable and reliable AI systems.
+            </p>
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming: Python, PyTorch, TensorFlow, Scikit-learn</li>
-                <li>Tools: Seaborn, Matplotlib</li>
-                <li>Methodologies: Machine Learning, Deep Learning, Explainable AI</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Graduate Research Assistant, Knowledge Infused AI and Inference Lab, UMBC</p>
-        </section>
-        <section id="publications">
+        <section id="papers" class="papers">
             <h2>Publications</h2>
-            <p>IoT-Based Preventive Mental Health Using Knowledge Graphs</p>
-            <p>WellDunn: On the Robustness and Explainability of Language Models</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p><a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
-            <p><a href="https://github.com/mohammadi-ali">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/ali-mohammadi-b0aab072">LinkedIn</a></p>
+            <div class="paper">
+                <img src="images/paper1.jpg" alt="Paper 1">
+                <div class="paper-details">
+                    <div class="paper-title">WellDunn: On the Robustness and Explainability of Language Models</div>
+                    <div class="paper-citation">Mohammadi, S. et al. BlackboxNLP at EMNLP 2024. <a href="https://aclanthology.org/2024.blackboxnlp-1.23" target="_blank">Association for Computational Linguistics</a></div>
+                </div>
+            </div>
+            <div class="paper">
+                <img src="images/paper2.jpg" alt="Paper 2">
+                <div class="paper-details">
+                    <div class="paper-title">IoT-Based Preventive Mental Health Using Knowledge Graphs</div>
+                    <div class="paper-citation">Gyrard, A., Mohammadi, S. et al. arXiv 2024. <a href="https://arxiv.org/abs/2406.13791" target="_blank">arXiv</a></div>
+                </div>
+            </div>
+            <div class="paper">
+                <img src="images/paper3.jpg" alt="Paper 3">
+                <div class="paper-details">
+                    <div class="paper-title">REASONS: A Benchmark for Scientific Sentence Retrieval</div>
+                    <div class="paper-citation">Tilwani, D., Mohammadi, A. et al. arXiv 2024. <a href="https://arxiv.org/abs/2405.02228" target="_blank">arXiv</a></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
