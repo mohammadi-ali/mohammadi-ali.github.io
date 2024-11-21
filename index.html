@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Mohammadi | CV</title>
-    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,27 +13,14 @@
             padding: 0;
             line-height: 1.6;
             color: #333;
-            background-color: #f4f4f4; /* Light gray background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            background: #fff; /* White background for the card */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 600px;
-            width: 90%;
+            background-color: #eaf2f8; /* Light blue background */
         }
 
         .header-container {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 20px 0;
         }
 
         .header-container img {
@@ -49,22 +35,41 @@
 
         .header-container h1 {
             margin: 0;
-            font-size: 1.5em;
+            font-size: 2em;
+            color: #2c3e50;
         }
 
         .header-container p {
             margin: 5px 0;
+            color: #34495e;
+        }
+
+        .decorative-line {
+            margin: 20px auto;
+            height: 4px;
+            width: 80%;
+            background: linear-gradient(to right, #2980b9, #6dd5fa, #2980b9);
+            border-radius: 2px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
         }
 
         footer {
-            margin-top: 20px;
+            text-align: center;
+            margin: 20px 0;
             font-size: 0.9em;
             color: #777;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <div class="header-container">
             <img src="images/profile.jpg" alt="Profile Photo">
             <div>
@@ -73,38 +78,39 @@
                 <p><a href="https://scholar.google.com/citations?user=1-N0KaIAAAAJ" target="_blank">Google Scholar</a></p>
             </div>
         </div>
-        <main>
-            <section id="education">
-                <h2>Education</h2>
-                <p>Ph.D. in Computer Science, University of Maryland, Baltimore County (UMBC)</p>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Programming: Python, PyTorch, TensorFlow, Scikit-learn</li>
-                    <li>Tools: Seaborn, Matplotlib</li>
-                    <li>Methodologies: Machine Learning, Deep Learning, Explainable AI</li>
-                </ul>
-            </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <p>Graduate Research Assistant, Knowledge Infused AI and Inference Lab, UMBC</p>
-            </section>
-            <section id="publications">
-                <h2>Publications</h2>
-                <p>IoT-Based Preventive Mental Health Using Knowledge Graphs</p>
-                <p>WellDunn: On the Robustness and Explainability of Language Models</p>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p><a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
-                <p><a href="https://github.com/mohammadi-ali">GitHub</a></p>
-                <p><a href="https://www.linkedin.com/in/ali-mohammadi-b0aab072">LinkedIn</a></p>
-            </section>
-        </main>
-        <footer>
-            <p>© 2024 Ali Mohammadi</p>
-        </footer>
-    </div>
+        <div class="decorative-line"></div>
+    </header>
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Ph.D. in Computer Science, University of Maryland, Baltimore County (UMBC)</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, PyTorch, TensorFlow, Scikit-learn</li>
+                <li>Tools: Seaborn, Matplotlib</li>
+                <li>Methodologies: Machine Learning, Deep Learning, Explainable AI</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Graduate Research Assistant, Knowledge Infused AI and Inference Lab, UMBC</p>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>IoT-Based Preventive Mental Health Using Knowledge Graphs</p>
+            <p>WellDunn: On the Robustness and Explainability of Language Models</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
+            <p><a href="https://github.com/mohammadi-ali">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/ali-mohammadi-b0aab072">LinkedIn</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ali Mohammadi</p>
+    </footer>
 </body>
 </html>
