@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +6,63 @@
     <title>Ali Mohammadi | CV</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff; /* White background for the card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+        }
+
         .header-container {
             display: flex;
             align-items: center;
-            padding: 20px;
+            justify-content: center;
         }
+
         .header-container img {
             width: 150px;
             border-radius: 50%;
             margin-right: 20px;
         }
+
         .header-container div {
             text-align: left;
         }
+
         .header-container h1 {
             margin: 0;
             font-size: 1.5em;
         }
+
         .header-container p {
             margin: 5px 0;
         }
-        nav ul {
+
+        footer {
             margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <div class="header-container">
             <img src="images/profile.jpg" alt="Profile Photo">
             <div>
@@ -43,49 +71,41 @@
                 <p>Google Scholar: <a href="https://scholar.google.com/citations?user=1-N0KaIAAAAJ" target="_blank">View Scholar Profile</a></p>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="education">
-            <h2>Education</h2>
-            <p>Ph.D. in Computer Science, University of Maryland, Baltimore County (UMBC)</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming: Python, PyTorch, TensorFlow, Scikit-learn</li>
-                <li>Tools: Seaborn, Matplotlib</li>
-                <li>Methodologies: Machine Learning, Deep Learning, Explainable AI</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Graduate Research Assistant, Knowledge Infused AI and Inference Lab, UMBC</p>
-            <p>Adjunct Professor, Islamic Azad University, Iran</p>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>IoT-Based Preventive Mental Health Using Knowledge Graphs</p>
-            <p>WellDunn: On the Robustness and Explainability of Language Models</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
-            <p>Phone: +1 (410) 446 5243</p>
-            <p>GitHub: <a href="https://github.com/mohammadi-ali">mohammadi-ali</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-mohammadi-b0aab072">ali-mohammadi</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Ali Mohammadi</p>
-    </footer>
+        <main>
+            <section id="education">
+                <h2>Education</h2>
+                <p>Ph.D. in Computer Science, University of Maryland, Baltimore County (UMBC)</p>
+                <p>Master of Science in Computer Engineering-Artificial Intelligence, Islamic Azad University</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming: Python, PyTorch, TensorFlow, Scikit-learn</li>
+                    <li>Tools: Seaborn, Matplotlib</li>
+                    <li>Methodologies: Machine Learning, Deep Learning, Explainable AI</li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>Graduate Research Assistant, Knowledge Infused AI and Inference Lab, UMBC</p>
+                <p>Adjunct Professor, Islamic Azad University, Iran</p>
+            </section>
+            <section id="publications">
+                <h2>Publications</h2>
+                <p>IoT-Based Preventive Mental Health Using Knowledge Graphs</p>
+                <p>WellDunn: On the Robustness and Explainability of Language Models</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:m294@umbc.edu">m294@umbc.edu</a></p>
+                <p>Phone: +1 (410) 446 5243</p>
+                <p>GitHub: <a href="https://github.com/mohammadi-ali">mohammadi-ali</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-mohammadi-b0aab072">ali-mohammadi</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Ali Mohammadi</p>
+        </footer>
+    </div>
 </body>
 </html>
