@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,7 +105,24 @@
             font-size: 0.9em;
             color: #777;
         }
-    </style>
+    
+/* Add this media query to make publications responsive */
+@media (max-width: 768px) {
+    .paper {
+        flex-direction: column; /* Stack the elements vertically */
+        text-align: center; /* Center-align the content for better mobile experience */
+    }
+
+    .paper img {
+        margin: 0 auto 10px; /* Center the image and add space below it */
+    }
+
+    .paper-details {
+        text-align: center; /* Center the text */
+    }
+}
+
+</style>
 </head>
 <body>
     <header>
