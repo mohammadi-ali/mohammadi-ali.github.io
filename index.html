@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,10 +75,15 @@
         }
 
         .paper img {
-            width: 300px;
+            width: 350px; /* Increased size */
             height: auto;
             border-radius: 10px;
             margin-right: 20px;
+        }
+
+        .paper img:hover {
+            transform: scale(1.2); /* Increase size by 20% */
+            transition: transform 0.3s ease; /* Smooth transition effect */
         }
 
         .paper-details {
@@ -106,38 +107,22 @@
             font-size: 0.9em;
             color: #777;
         }
-    
-/* Add this media query to make publications responsive */
-@media (max-width: 768px) {
-    .paper {
-        flex-direction: column; /* Stack the elements vertically */
-        text-align: center; /* Center-align the content for better mobile experience */
-    }
 
-    .paper img {
-        margin: 0 auto 10px; /* Center the image and add space below it */
-    }
+        @media (max-width: 768px) {
+            .paper {
+                flex-direction: column; /* Stack the elements vertically */
+                text-align: center; /* Center-align the content for better mobile experience */
+            }
 
-    .paper-details {
-        text-align: center; /* Center the text */
-    }
-}
+            .paper img {
+                margin: 0 auto 10px; /* Center the image and add space below it */
+            }
 
-
-/* Increase the size of images in the publication section */
-.paper img {
-    width: 350px; /* Increase the width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-/* Adjust hover effect to the increased image size */
-.paper img:hover {
-    transform: scale(1.2); /* Increase size by 20% */
-    transition: transform 0.3s ease; /* Smooth transition effect */
-}
-
-</style>
+            .paper-details {
+                text-align: center; /* Center the text */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -164,8 +149,8 @@
             </p>
             <p>I publish under the names <B>Ali Mohammadi</B> and <B>Seyedali Mohammadi</B>, reflecting my work across diverse collaborations and research topics.</p>
         </section>
-        <section id="papers" class="papers">
-            <h2>Publications</h2>
+        <section id="recent-papers" class="papers">
+            <h2>Recent Papers</h2>
             <div class="paper">
                 <img src="images/welldunn.jpg" alt="Paper 1">
                 <div class="paper-details">
@@ -185,6 +170,15 @@
                 <div class="paper-details">
                     <div class="paper-title">REASONS: A benchmark for REtrieval and Automated citationS Of scieNtific Sentences using Public and Proprietary LLMs</div>
                     <div class="paper-citation">Tilwani, D., Saxena, Y., <B>Mohammadi, A.</B> et al. arXiv 2024. <a href="https://arxiv.org/abs/2405.02228" target="_blank">arXiv</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="previous-papers" class="papers">
+            <h2>Previous Papers</h2>
+            <div class="paper">
+                <div class="paper-details">
+                    <div class="paper-title">A ROBUST GA/KNN BASED HYPOTHESIS VERIFICATION SYSTEM FOR VEHICLE DETECTION</div>
+                    <div class="paper-citation">Khairdoost, N., Pour, M. R. B., Mohammadi, S. A., Jajarm, M. H. International Journal of Artificial Intelligence & Applications, 2015. Citeseer.</div>
                 </div>
             </div>
         </section>
