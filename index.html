@@ -120,6 +120,17 @@
             margin-right: 15px;
         }
 
+        .experience-entry {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+
         @media (max-width: 768px) {
             .paper {
                 flex-direction: column; /* Stack the elements vertically */
@@ -246,7 +257,7 @@
        <section id="experience" class="papers">
     <h2>Experience</h2>
 
-    <div>
+    <div class="experience-entry">
         <img src="images/umbc.png" alt="UMBC Logo" class="logo">
         <div class="paper-details">
             <div class="paper-title">Research Assistant</div>
@@ -258,7 +269,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="experience-entry">
         <img src="images/infinitus.png" alt="Infinitus Logo" class="logo">
         <div class="paper-details">
             <div class="paper-title">Member of Technical Team, Intern </div>
