@@ -168,6 +168,55 @@
             .paper img {
                 margin: 0 auto 10px; /* Center the image and add space below it */
             }
+            /* Year container */
+.paper-year {
+  margin: 18px 0 28px;
+  border-radius: 10px;
+}
+
+/* Clickable year header */
+.paper-year-summary {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* optional look */
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+/* Hide default triangle marker (Chrome/Safari) */
+.paper-year-summary::-webkit-details-marker {
+  display: none;
+}
+
+/* + icon */
+.paper-year-summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+/* - icon when open */
+.paper-year[open] > .paper-year-summary::after {
+  content: "–";
+}
+
+/* Spacing between papers inside an expanded year */
+.paper-year-content {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 
             .paper-details {
                 text-align: center; /* Center the text */
@@ -203,108 +252,119 @@
             <p>View my <a href="images/Ali_Mohammadi_CV.pdf" target="_blank">Curriculum Vitae (CV)</a> for more details.</p>
         </section>
 
+       
         <section id="recent-papers" class="papers">
   <h2>Papers</h2>
 
-  <!-- 2026 -->
-  <div class="paper-year">
-    <h3 class="paper-year-title">2026</h3>
+  <!-- ===================== 2026 ===================== -->
+  <details class="paper-year" open>
+    <summary class="paper-year-summary">2026</summary>
 
-    <div class="paper">
-      <img src="images/lingvarbench.jpg" alt="LingVarBench">
-      <div class="paper-details">
-        <div class="paper-title">LingVarBench: Benchmarking LLM for Automated Named Entity Recognition in Structured Synthetic Spoken Transcriptions</div>
-        <div class="paper-citation">
-          <b>Seyedali Mohammadi</b>, Manas Paldhe, Amit Chhabra, Youngseo Son, Vishal Seshagiri
-          <br><b>To appear in EACL 2026 (Industry Track).</b>
-          <a href="https://arxiv.org/abs/2508.15801" target="_blank">arXiv</a>
-          <br>Conducted as part of my summer internship at Infinitus Systems Inc.
+    <div class="paper-year-content">
+      <div class="paper">
+        <img src="images/lingvarbench.jpg" alt="LingVarBench">
+        <div class="paper-details">
+          <div class="paper-title">
+            LingVarBench: Benchmarking LLM for Automated Named Entity Recognition in Structured Synthetic Spoken
+            Transcriptions
+          </div>
+          <div class="paper-citation">
+            <b>Seyedali Mohammadi</b>, Manas Paldhe, Amit Chhabra, Youngseo Son, Vishal Seshagiri
+            <br><b>To appear in EACL 2026 (Industry Track).</b>
+            <a href="https://arxiv.org/abs/2508.15801" target="_blank">arXiv</a>
+            <br>Conducted as part of my summer internship at Infinitus Systems Inc.
+          </div>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="images/MentalHealth.png" alt="IoT-Based Preventive Mental Health">
+        <div class="paper-details">
+          <div class="paper-title">IoT-Based Preventive Mental Health Using Knowledge Graphs and Standards for Better Well-Being</div>
+          <div class="paper-citation">
+            Amelie Gyrard, <b>Seyedali Mohammadi</b>, Manas Gaur, and Antonio Kung.
+            <br>
+            <b>Chapter 8</b> in <i>Smart Technologies for Sustainable Development Goals: Good Health &amp; Well-Being</i>,
+            edited by A. Jose Anand and S. Krishnan. Routledge, Taylor &amp; Francis Group, London, United Kingdom, 2026.
+            ISBN: 9781041042990.
+            <br>
+            <a href="https://doi.org/10.1201/9781003630685-8" target="_blank" rel="noopener">Chapter</a>
+          </div>
         </div>
       </div>
     </div>
+  </details>
 
-    <div class="paper">
-      <img src="images/MentalHealth.png" alt="IoT-Based Preventive Mental Health">
-      <div class="paper-details">
-        <div class="paper-title">IoT-Based Preventive Mental Health Using Knowledge Graphs and Standards for Better Well-Being</div>
-        <div class="paper-citation">
-          Amelie Gyrard, <b>Seyedali Mohammadi</b>, Manas Gaur, and Antonio Kung.
-          <br>
-          <b>Chapter 8</b> in <i>Smart Technologies for Sustainable Development Goals: Good Health &amp; Well-Being</i>,
-          edited by A. Jose Anand and S. Krishnan. Routledge, Taylor &amp; Francis Group, London, United Kingdom, 2026.
-          ISBN: 9781041042990.
-          <br>
-          <a href="https://doi.org/10.1201/9781003630685-8" target="_blank" rel="noopener">Chapter</a>
+  <!-- ===================== 2025 ===================== -->
+  <details class="paper-year">
+    <summary class="paper-year-summary">2025</summary>
+
+    <div class="paper-year-content">
+      <div class="paper">
+        <img src="images/definition.jpg" alt="Do LLMs Adhere to Label Definitions?">
+        <div class="paper-details">
+          <div class="paper-title">Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions</div>
+          <div class="paper-citation">
+            <b>Seyedali Mohammadi</b>, Bhaskara Hanuma Vedula, Hemank Lamba, Edward Raff, Ponnurangam Kumaraguru,
+            Francis Ferraro, Manas Gaur
+            <br><b>EMNLP 2025 (Main Conference).</b>
+            <a href="https://aclanthology.org/2025.emnlp-main.1648/" target="_blank">ACL</a>
+            <a href="https://youtu.be/sjhMPrIHgVo" target="_blank">YouTube</a>
+            <a href="https://github.com/mohammadi-ali/Definition-Receptivity-LLMs" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="images/MetamorphicLLM.svg" alt="Can LLMs obfuscate code?">
+        <div class="paper-details">
+          <div class="paper-title">Can LLMs obfuscate code? A systematic analysis of large language models into assembly code obfuscation.</div>
+          <div class="paper-citation">
+            Mohseni, S.<sup>*</sup>, <b>Mohammadi, S.<sup>*</sup></b>, Tilwani, D., Ndawula, G. K., Vema, S., Saxena, Y.,
+            Raff, E., and Gaur, M.
+            <br><b>AAAI 2025.</b>
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34672" target="_blank">AAAI</a>
+            <br><sup>*</sup>Equal contribution.
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </details>
 
-  <!-- 2025 -->
-  <div class="paper-year">
-    <h3 class="paper-year-title">2025</h3>
+  <!-- ===================== 2024 ===================== -->
+  <details class="paper-year">
+    <summary class="paper-year-summary">2024</summary>
 
-    <div class="paper">
-      <img src="images/definition.jpg" alt="Do LLMs Adhere to Label Definitions?">
-      <div class="paper-details">
-        <div class="paper-title">Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions</div>
-        <div class="paper-citation">
-          <b>Seyedali Mohammadi</b>, Bhaskara Hanuma Vedula, Hemank Lamba, Edward Raff, Ponnurangam Kumaraguru, Francis Ferraro, Manas Gaur
-          <br><b>EMNLP 2025 (Main Conference).</b>
-          <a href="https://aclanthology.org/2025.emnlp-main.1648/" target="_blank">ACL</a>
-          <a href="https://youtu.be/sjhMPrIHgVo" target="_blank">YouTube</a>
-          <a href="https://github.com/mohammadi-ali/Definition-Receptivity-LLMs" target="_blank">Code</a>
+    <div class="paper-year-content">
+      <div class="paper">
+        <img src="images/welldunn.jpg" alt="Welldunn">
+        <div class="paper-details">
+          <div class="paper-title">
+            Welldunn: On the robustness and explainability of language models and large language models in identifying wellness
+            dimensions
+          </div>
+          <div class="paper-citation">
+            Seyedali Mohammadi, Edward Raff, Jinendra Malekar, Vedant Palit, Francis Ferraro, Manas Gaur
+            <br><b>EMNLP 2024 (BlackBoxNLP).</b>
+            <a href="https://aclanthology.org/2024.blackboxnlp-1.23/" target="_blank">ACL 2024</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="images/Reasons.png" alt="Attribution in Scientific Literature">
+        <div class="paper-details">
+          <div class="paper-title">Attribution in Scientific Literature: New Benchmark and Methods</div>
+          <div class="paper-citation">
+            Deepa Tilwani, Yash Saxena, <b>Ali Mohammadi</b>, Edward Raff, Amit Sheth, Srinivasan Parthasarathy, Manas Gaur.
+            <br><b>arXiv 2024.</b>
+            <a href="https://arxiv.org/abs/2405.02228" target="_blank">arXiv</a>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="paper">
-      <img src="images/MetamorphicLLM.svg" alt="Can LLMs obfuscate code?">
-      <div class="paper-details">
-        <div class="paper-title">Can LLMs obfuscate code? A systematic analysis of large language models into assembly code obfuscation.</div>
-        <div class="paper-citation">
-          Mohseni, S.<sup>*</sup>, <b>Mohammadi, S.<sup>*</sup></b>, Tilwani, D., Ndawula, G. K., Vema, S., Saxena, Y., Raff, E., and Gaur, M.
-          <br><b>AAAI 2025.</b>
-          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34672" target="_blank">AAAI</a>
-          <br><sup>*</sup>Equal contribution.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 2024 -->
-  <div class="paper-year">
-    <h3 class="paper-year-title">2024</h3>
-
-    <div class="paper">
-      <img src="images/welldunn.jpg" alt="Welldunn">
-      <div class="paper-details">
-        <div class="paper-title">Welldunn: On the robustness and explainability of language models and large language models in identifying wellness dimensions</div>
-        <div class="paper-citation">
-          Seyedali Mohammadi, Edward Raff, Jinendra Malekar, Vedant Palit, Francis Ferraro, Manas Gaur
-          <br><b>EMNLP 2024 (BlackBoxNLP).</b>
-          <a href="https://aclanthology.org/2024.blackboxnlp-1.23/" target="_blank">ACL 2024</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="paper">
-      <img src="images/Reasons.png" alt="Attribution in Scientific Literature">
-      <div class="paper-details">
-        <div class="paper-title">Attribution in Scientific Literature: New Benchmark and Methods</div>
-        <div class="paper-citation">
-          Deepa Tilwani, Yash Saxena, <b>Ali Mohammadi</b>, Edward Raff, Amit Sheth, Srinivasan Parthasarathy, Manas Gaur.
-          <br><b>arXiv 2024.</b>
-          <a href="https://arxiv.org/abs/2405.02228" target="_blank">arXiv</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  </details>
 </section>
-
-
-        
-
 
 
         
